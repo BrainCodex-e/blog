@@ -2,10 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://braincodex-e.github.io/blog/</loc>
-         <lastmod>2024-10-26</lastmod>
+         <lastmod>2024-11-01</lastmod>
     </url>
     <url>
          <loc>https://braincodex-e.github.io/blog/about/</loc>
-         <lastmod>2024-10-26</lastmod>
+         <lastmod>2024-11-01</lastmod>
+    </url>
+    <url>
+         <loc>https://braincodex-e.github.io/blog/networking/</loc>
+         <lastmod>2024-11-01</lastmod>
+    </url>
+    <url>
+         <loc>https://braincodex-e.github.io/blog/networking/RTSP/</loc>
+         <lastmod>2024-11-01</lastmod>
+    </url>
+    <url>
+         <loc>https://braincodex-e.github.io/blog/tags/</loc>
+         <lastmod>2024-11-01</lastmod>
     </url>
 </urlset>
