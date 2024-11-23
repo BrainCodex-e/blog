@@ -517,8 +517,13 @@
 <h1 id="rasberrypi_esp32">Rasberrypi_esp32</h1>
 <p><a href="https://github.com/rzeldent/esp32cam-rtsp">source</a></p>
 <p>setting up ssh on raspbery pi</p>
-<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">openssh</span><span class="o">-</span><span class="n">server</span>
 </span></code></pre></div>
+<hr />
+<p>Verify status is on
+<div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">status</span> <span class="n">sshd</span>
+</span></code></pre></div></p>
 
 
 
