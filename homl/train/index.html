@@ -383,6 +383,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#final-analogy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Final Analogy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-general-idea-of-the-stages" class="md-nav__link">
+    <span class="md-ellipsis">
+      A general idea of the stages
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -400,16 +426,60 @@
 <h1 id="type-of-sets">Type of Sets</h1>
 <blockquote>
 <p><strong>Training Set:</strong><br />
-The training set is a subset of data used to fit and train a machine learning model. It may be labled or not depend on the type of learning used. <br />
+The training set is a subset of data used to fit and train a machine learning model. It may be labled or not depend on the type of learning used.<br />
 - Holds approximately 60–80% of the data<br />
-- Represents the general problem being addressed<br />
-- Can be noisier than other sets  </p>
+- Represents the general problem being addressed <br />
+- might be allot of noise in the data   </p>
 <p><strong>Train-dev set:</strong>
 The dev set is an extra tool to see if the training set hit the mark. If the model preformence is poor then it must have overfitted the training set.
-if it preforms well on the train-dev we cant try evalute it on the dev set. </p>
+if it preforms well on the train-dev we cant try evalute it on the dev set. 
+</p>
 <p><strong>Dev set(validation):</strong>
 This is the set used during develompent to choose the best model or hpyerparameters we want to use and it give an estamation of how well will the model work on unseen but representive data.</p>
+<p><strong>Test set:</strong>
+The final evaluation of the model, it's used to estimate how well the modell will preform on real world data we evaluate it once at the end and thats it.<br />
+Data must be representive of the production data. meaning the test set should be similiar in type and quality to the data the model will meet in the real world when deployed.</p>
 </blockquote>
+<hr />
+<h2 id="final-analogy">🧠 Final Analogy</h2>
+<p>Imagine you're training for a marathon:</p>
+<ul>
+<li>🏋️ <strong>Training set:</strong> Your daily practice runs where you build up your skills and stamina.</li>
+<li>🧪 <strong>Train-dev set:</strong> A practice race on a course similar to the real one, helping you check if your training is on track.</li>
+<li>🧪 <strong>Dev set:</strong> A practice race on the actual marathon course, letting you fine-tune your strategy and gear.</li>
+<li>🏁 <strong>Test set:</strong> The real marathon at the end, where you see how well all your preparation pays off.</li>
+</ul>
+<h2 id="a-general-idea-of-the-stages">A general idea of the stages</h2>
+<pre class="mermaid"><code>
+
+flowchart LR
+
+    %% === DATA SOURCES ===
+    subgraph D1[Training Data]
+        A["Training Set"]
+    end
+
+    subgraph D2[Validation Data]
+        B["Dev Set"]
+    end
+
+    subgraph D3[Test Data]
+        C["Test Set"]
+    end
+
+    %% === PROCESSING STEPS ===
+    A --&gt; D["Train multiple models"]
+    D --&gt; E["Evaluate models"]
+    B --&gt; E
+
+    E -- Bad models --&gt; D
+    E -- Best model --&gt; F["Retrain the best model"]
+    B -.-&gt; F
+    A -.-&gt; F
+
+    F --&gt; G["Evaluate the final model"]
+    C --&gt; G
+</code></pre>
 
 
 
@@ -427,6 +497,8 @@ This is the set used during develompent to choose the best model or hpyerparamet
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -458,7 +530,7 @@ This is the set used during develompent to choose the best model or hpyerparamet
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.code.expand", "content.tabs.link", "content.tooltips", "content.code.highlight", "content.code.render"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
