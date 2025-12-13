@@ -1,1 +1,0 @@
-# rtsp is a protocol to stream and record informationRTSP

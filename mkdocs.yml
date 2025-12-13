@@ -1,16 +1,31 @@
 site_name: erez site
 site_url: https://braincodex-e.github.io/blog/
 
-# nav:
-#   - Home: index.md
-#   - About: about.md
+nav:
+  - Home: index.md
+  - About: about.md
+  - Tags: tags.md
+  - Hands-On ML:
+      - Overview: homl/overview.md
+      - Chapter 1: homl/chapter1.md
+      - Chapter 2: homl/chapter2.md
 
-theme: 
+# Theme configuration
+
+theme:
   name: material
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.expand
+    - content.tabs.link
+    - content.tooltips
+    - content.code.highlight
+    - content.code.render  # <-- this enables Mermaid rendering
+  favicon: assets/favicon.png
+  logo: assets/favicon.png
 
-  favicon: /docs/assets/favicon.png
-  
-
+# Markdown extensions (deduplicated and cleaned up)
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -18,9 +33,25 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.tasklist
+  - pymdownx.keys
+  - pymdownx.mark
+  - attr_list
+  - admonition
+  - footnotes
+  - def_list
+  - md_in_html
+  - pymdownx.arithmatex
 
-plugins:
-  - search
-  - tags:
-      tags_file: tags.md
+# Optional: Add mermaid2 plugin if you want advanced features
+# plugins:
+#   - search
+#   - mermaid2
