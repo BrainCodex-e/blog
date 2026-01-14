@@ -10,13 +10,20 @@ Platform IO is just a way to make embedded programming easier.
 
 <div class="grid cards" markdown>
 
--   :wrench:{ .lg .middle } **Setup Guide**
+-   :material-tools:{ .lg .middle } **:wrench: Setup Guide**
 
     ---
 
-    Complete step-by-step guide to set up Platform IO, configure USB permissions, and get started with your first project.
+    Complete step-by-step guide to set up Platform IO, configure USB permissions (`chmod`, `dialout` group), and get `/dev/ttyACM0` working!
 
-    [:octicons-arrow-right-24: Go to Setup](setup.md)
+    **What you'll learn:**
+    
+    - :fontawesome-solid-download: Install Platform IO IDE
+    - :fontawesome-solid-usb: Fix USB serial port access
+    - :fontawesome-solid-terminal: Essential commands & troubleshooting
+    - :fontawesome-solid-rocket: Deploy your first project
+
+    [:octicons-arrow-right-24: Start Setup Now](setup.md){ .md-button .md-button--primary }
 
 </div>
 
