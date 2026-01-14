@@ -4,7 +4,22 @@ Welcome to my Platform IO project documentation! This section covers my embedded
 
 ## Overview
 
-Platform io is jsut a way to make embedde programming easier
+Platform IO is just a way to make embedded programming easier.
+
+## Quick Links
+
+<div class="grid cards" markdown>
+
+-   :wrench:{ .lg .middle } **Setup Guide**
+
+    ---
+
+    Complete step-by-step guide to set up Platform IO, configure USB permissions, and get started with your first project.
+
+    [:octicons-arrow-right-24: Go to Setup](setup.md)
+
+</div>
+
 ## Projects
 
 This section will contain documentation for various Platform IO projects I'm working on:
