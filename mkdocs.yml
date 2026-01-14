@@ -9,6 +9,9 @@ nav:
       - Overview: homl/overview.md
       - Chapter 1: homl/chapter1.md
       - Chapter 2: homl/chapter2.md
+  - Platform IO:
+      - Overview: platformio/index.md
+      - Setup Guide: platformio/setup.md
 
 # Theme configuration
 
