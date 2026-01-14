@@ -10,7 +10,7 @@ Platform IO is just a way to make embedded programming easier.
 
 <div class="grid cards" markdown>
 
--   :material-tools:{ .lg .middle } **:wrench: Setup Guide**
+-   **🔧 Setup Guide**
 
     ---
 
@@ -18,12 +18,12 @@ Platform IO is just a way to make embedded programming easier.
 
     **What you'll learn:**
     
-    - :fontawesome-solid-download: Install Platform IO IDE
-    - :fontawesome-solid-usb: Fix USB serial port access
-    - :fontawesome-solid-terminal: Essential commands & troubleshooting
-    - :fontawesome-solid-rocket: Deploy your first project
+    - 📥 Install Platform IO IDE
+    - 🔌 Fix USB serial port access
+    - 💻 Essential commands & troubleshooting
+    - 🚀 Deploy your first project
 
-    [:octicons-arrow-right-24: Start Setup Now](setup.md){ .md-button .md-button--primary }
+    [**Start Setup Now →**](setup.md){ .md-button .md-button--primary }
 
 </div>
 
