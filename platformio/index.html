@@ -8,24 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://braincodex-e.github.io/blog/Uni-Notes/about/">
+        <link rel="canonical" href="https://braincodex-e.github.io/blog/platformio/">
       
       
+        <link rel="prev" href="../homl/chapter2/">
+      
+      
+        <link rel="next" href="setup/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/favicon.png">
+      <link rel="icon" href="../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>MOSFET Modes - erez site</title>
+        <title>Overview - erez site</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -44,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mosfet-modes" class="md-skip">
+        <a href="#platform-io-projects" class="md-skip">
           Skip to content
         </a>
       
@@ -78,9 +82,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="erez site" class="md-header__button md-logo" aria-label="erez site" data-md-component="logo">
+    <a href=".." title="erez site" class="md-header__button md-logo" aria-label="erez site" data-md-component="logo">
       
-  <img src="../../assets/favicon.png" alt="logo">
+  <img src="../assets/favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -97,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MOSFET Modes
+              Overview
             
           </span>
         </div>
@@ -175,9 +179,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="erez site" class="md-nav__button md-logo" aria-label="erez site" data-md-component="logo">
+    <a href=".." title="erez site" class="md-nav__button md-logo" aria-label="erez site" data-md-component="logo">
       
-  <img src="../../assets/favicon.png" alt="logo">
+  <img src="../assets/favicon.png" alt="logo">
 
     </a>
     erez site
@@ -192,7 +196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -219,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/" class="md-nav__link">
+      <a href="../about/" class="md-nav__link">
         
   
   
@@ -246,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tags/" class="md-nav__link">
+      <a href="../tags/" class="md-nav__link">
         
   
   
@@ -320,7 +324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../homl/overview/" class="md-nav__link">
+      <a href="../homl/overview/" class="md-nav__link">
         
   
   
@@ -348,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../homl/chapter1/" class="md-nav__link">
+      <a href="../homl/chapter1/" class="md-nav__link">
         
   
   
@@ -376,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../homl/chapter2/" class="md-nav__link">
+      <a href="../homl/chapter2/" class="md-nav__link">
         
   
   
@@ -408,18 +412,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -440,7 +446,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -455,10 +461,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../platformio/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -474,6 +507,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Started
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -486,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../platformio/setup/" class="md-nav__link">
+      <a href="setup/" class="md-nav__link">
         
   
   
@@ -541,10 +627,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#region-summary-table" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📊 Region Summary Table
+        Overview
       
     </span>
   </a>
@@ -552,10 +638,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#region-conditions" class="md-nav__link">
+  <a href="#projects" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔄 Region Conditions
+        Projects
       
     </span>
   </a>
@@ -563,10 +649,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#equations" class="md-nav__link">
+  <a href="#getting-started" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📐 Equations
+        Getting Started
       
     </span>
   </a>
@@ -590,78 +676,26 @@
 
 
 
-<h1 id="mosfet-modes">MOSFET Modes</h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This page summarizes NMOS and PMOS transistor modes, including region conditions, equations, and application notes.</p>
-</div>
-<h2 id="region-summary-table">📊 Region Summary Table</h2>
-<table>
-<thead>
-<tr>
-<th>Region</th>
-<th>NMOS Conditions</th>
-<th>NMOS <span class="arithmatex"><span class="MathJax_Preview"> I_D </span><script type="math/tex"> I_D </script></span> Equation</th>
-<th>PMOS Conditions</th>
-<th>PMOS <span class="arithmatex"><span class="MathJax_Preview"> I_D </span><script type="math/tex"> I_D </script></span> Equation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Cutoff</td>
-<td><span class="arithmatex"><span class="MathJax_Preview"> V_{GS} &lt; V_T </span><script type="math/tex"> V_{GS} < V_T </script></span></td>
-<td><span class="arithmatex"><span class="MathJax_Preview"> I_D = 0 </span><script type="math/tex"> I_D = 0 </script></span></td>
-<td>( V_{SG} &lt;</td>
-<td>V_T</td>
-</tr>
-<tr>
-<td>Linear</td>
-<td><span class="arithmatex"><span class="MathJax_Preview"> V_{GS} &gt; V_T,\ V_{DS} &lt; V_{GS} - V_T </span><script type="math/tex"> V_{GS} > V_T,\ V_{DS} < V_{GS} - V_T </script></span></td>
-<td><span class="arithmatex"><span class="MathJax_Preview"> I_D = \beta_n [(V_{GS} - V_T)V_{DS} - \frac{1}{2}V_{DS}^2] </span><script type="math/tex"> I_D = \beta_n [(V_{GS} - V_T)V_{DS} - \frac{1}{2}V_{DS}^2] </script></span></td>
-<td>( V_{SG} &gt;</td>
-<td>V_T</td>
-</tr>
-<tr>
-<td>Saturation</td>
-<td><span class="arithmatex"><span class="MathJax_Preview"> V_{GS} &gt; V_T,\ V_{DS} \geq V_{GS} - V_T </span><script type="math/tex"> V_{GS} > V_T,\ V_{DS} \geq V_{GS} - V_T </script></span></td>
-<td><span class="arithmatex"><span class="MathJax_Preview"> I_D = \frac{1}{2} \beta_n (V_{GS} - V_T)^2 </span><script type="math/tex"> I_D = \frac{1}{2} \beta_n (V_{GS} - V_T)^2 </script></span></td>
-<td>( V_{SG} &gt;</td>
-<td>V_T</td>
-</tr>
-</tbody>
-</table>
-<h2 id="region-conditions">🔄 Region Conditions</h2>
-<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">NMOS</label><div class="tabbed-content"></div>
-</div>
+<h1 id="platform-io-projects">Platform IO Projects</h1>
+<p>Welcome to my Platform IO project documentation! This section covers my embedded systems development work using Platform IO.</p>
+<h2 id="overview">Overview</h2>
+<p>Platform io is jsut a way to make embedde programming easier</p>
+<h2 id="projects">Projects</h2>
+<p>This section will contain documentation for various Platform IO projects I'm working on:</p>
 <ul>
-<li><strong>Cutoff</strong>: <span class="arithmatex"><span class="MathJax_Preview"> V_{GS} &lt; V_T </span><script type="math/tex"> V_{GS} < V_T </script></span></li>
-<li><strong>Linear</strong>: <span class="arithmatex"><span class="MathJax_Preview"> V_{GS} &gt; V_T </span><script type="math/tex"> V_{GS} > V_T </script></span> and <span class="arithmatex"><span class="MathJax_Preview"> V_{DS} &lt; V_{GS} - V_T </span><script type="math/tex"> V_{DS} < V_{GS} - V_T </script></span></li>
-<li><strong>Saturation</strong>: <span class="arithmatex"><span class="MathJax_Preview"> V_{GS} &gt; V_T </span><script type="math/tex"> V_{GS} > V_T </script></span> and <span class="arithmatex"><span class="MathJax_Preview"> V_{DS} \geq V_{GS} - V_T </span><script type="math/tex"> V_{DS} \geq V_{GS} - V_T </script></span></li>
+<li>Project setup and configuration</li>
+<li>Hardware specifications</li>
+<li>Code implementations</li>
+<li>Challenges and solutions</li>
+<li>Results and demonstrations</li>
 </ul>
-<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">PMOS</label><div class="tabbed-content"></div>
-</div>
-<ul>
-<li><strong>Cutoff</strong>: <span class="arithmatex"><span class="MathJax_Preview"> V_{SG} &lt; |V_T| </span><script type="math/tex"> V_{SG} < |V_T| </script></span></li>
-<li><strong>Linear</strong>: <span class="arithmatex"><span class="MathJax_Preview"> V_{SG} &gt; |V_T| </span><script type="math/tex"> V_{SG} > |V_T| </script></span> and <span class="arithmatex"><span class="MathJax_Preview"> V_{SD} &lt; V_{SG} - |V_T| </span><script type="math/tex"> V_{SD} < V_{SG} - |V_T| </script></span></li>
-<li><strong>Saturation</strong>: <span class="arithmatex"><span class="MathJax_Preview"> V_{SG} &gt; |V_T| </span><script type="math/tex"> V_{SG} > |V_T| </script></span> and <span class="arithmatex"><span class="MathJax_Preview"> V_{SD} \geq V_{SG} - |V_T| </span><script type="math/tex"> V_{SD} \geq V_{SG} - |V_T| </script></span></li>
-</ul>
-<h2 id="equations">📐 Equations</h2>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">NMOS</label><div class="tabbed-content"></div>
-</div>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>I_D = \begin{cases}
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>0 &amp; V_{GS} &lt; V_T \\
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>\beta_n \left[(V_{GS} - V_T)V_{DS} - \frac{1}{2}V_{DS}^2\right] &amp; V_{DS} &lt; V_{GS} - V_T \\
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>\frac{1}{2} \beta_n (V_{GS} - V_T)^2 &amp; V_{DS} \geq V_{GS} - V_T
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>\end{cases}
-</span></code></pre></div>
-<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">PMOS</label><div class="tabbed-content"></div>
-</div>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>I_D = \begin{cases}
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>0 &amp; V_{SG} &lt; |V_T| \\
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>\beta_p \left[(V_{SG} - |V_T|)V_{SD} - \frac{1}{2}V_{SD}^2\right] &amp; V_{SD} &lt; V_{SG} - |V_T| \\
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>\frac{1}{2} \beta_p (V_{SG} - |V_T|)^2 &amp; V_{SD} \geq V_{SG} - |V_T|
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>\end{cases}
-</span></code></pre></div>
+<h2 id="getting-started">Getting Started</h2>
+<p>Platform IO can be used with:
+- VS Code (via the Platform IO IDE extension)
+- Command line interface
+- Various IDEs</p>
+<hr />
+<p><em>Last updated: January 14, 2026</em></p>
 
 
 
@@ -713,10 +747,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.code.expand", "content.tabs.link", "content.tooltips", "content.code.highlight", "content.code.render"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate", "content.code.copy", "content.code.expand", "content.tabs.link", "content.tooltips", "content.code.highlight", "content.code.render"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
