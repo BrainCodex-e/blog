@@ -14,7 +14,7 @@
         <link rel="prev" href="../tags/">
       
       
-        <link rel="next" href="../homl/overview/">
+        <link rel="next" href="docker/">
       
       
         
@@ -397,17 +397,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-i-mean-by-devops-here" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What I mean by DevOps (here)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#practical-checklist" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -457,21 +446,66 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Notes
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="venv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python venv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -770,17 +804,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-i-mean-by-devops-here" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What I mean by DevOps (here)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#practical-checklist" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -830,17 +853,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Notes
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -862,41 +874,28 @@
 <p><img alt="DevOpt — the optimistic deploy daemon" src="../assets/devopt-infinity.svg" width="720" /></p>
 <p>Welcome to the DevOps corner—where we automate the boring parts, document the scary parts, and politely bribe the deploy gremlins with green checkmarks.</p>
 <h2 id="devopt-our-mascot">DevOpt (our mascot)</h2>
-<p><strong>DevOpt</strong> is the <em>optimistic</em> daemon that lives in the CI logs.</p>
+<p><strong>DevOpt</strong> is the optimistic daemon that lives in the CI logs.</p>
 <ul>
 <li>If tests pass: it purrs quietly.</li>
-<li>If tests fail: it whispers, “works on my machine” and vanishes.</li>
-</ul>
-<h2 id="what-i-mean-by-devops-here">What I mean by DevOps (here)</h2>
-<ul>
-<li><strong>Fast feedback</strong>: small changes, quick CI, visible failures.</li>
-<li><strong>Repeatability</strong>: build/release are scripts, not rituals.</li>
-<li><strong>Reliability</strong>: measure, alert, and have a rollback story.</li>
-<li><strong>Shared ownership</strong>: ops is not a separate planet.</li>
+<li>If tests fail: it whispers “works on my machine” and vanishes.</li>
 </ul>
 <h2 id="practical-checklist">Practical checklist</h2>
 <h3 id="ci">CI</h3>
 <ul>
-<li>Lint + type-check (where relevant)</li>
-<li>Unit tests + minimum coverage target (if you track it)</li>
+<li>Lint + basic checks</li>
+<li>Unit tests</li>
 <li>Build artifacts are reproducible</li>
-<li>Cache wisely (dependencies yes, output only if safe)</li>
 </ul>
 <h3 id="cd">CD</h3>
 <ul>
-<li>One-click deploy (or one-command)</li>
-<li>Zero-downtime strategy where possible</li>
-<li>Rollback plan that’s actually tested</li>
-<li>Release notes generated from commits/tags</li>
+<li>One-command deploy</li>
+<li>Rollback plan you’ve actually tried</li>
 </ul>
 <h3 id="observability">Observability</h3>
 <ul>
-<li>Logs: structured, searchable, with correlation IDs</li>
-<li>Metrics: SLO-ish dashboards (latency, errors, saturation)</li>
-<li>Traces: sample enough to debug real incidents</li>
+<li>Logs you can search</li>
+<li>Metrics you can alert on</li>
 </ul>
-<h2 id="notes">Notes</h2>
-<p>This section is a living page—add runbooks, playbooks, and “gotchas” as you hit them.</p>
 
 
 
