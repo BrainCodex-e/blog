@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="PlatformIO widget">
+  <title>PlatformIO</title>
+  <style>
+    .stroke { stroke: var(--md-default-fg-color); }
+    .fill { fill: var(--md-default-fg-color); }
+    .bg { fill: var(--md-default-bg-color); }
+  </style>
+
+  <rect x="12" y="12" width="232" height="232" rx="28" class="bg" opacity="0.9"/>
+  <rect x="12" y="12" width="232" height="232" rx="28" fill="none" class="stroke" opacity="0.18" stroke-width="6"/>
+
+  <!-- simple microcontroller + pins -->
+  <g fill="none" class="stroke" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="74" y="78" width="108" height="100" rx="16" opacity="0.9"/>
+    <path d="M96 112h64" opacity="0.6"/>
+    <path d="M96 138h40" opacity="0.6"/>
+
+    <!-- pins -->
+    <path d="M74 98H52"/>
+    <path d="M74 122H52"/>
+    <path d="M74 146H52"/>
+    <path d="M204 98h-22"/>
+    <path d="M204 122h-22"/>
+    <path d="M204 146h-22"/>
+
+    <!-- upload arrow (IO) -->
+    <path d="M128 196v-22"/>
+    <path d="M118 184l10-10 10 10"/>
+  </g>
+
+  <circle cx="164" cy="138" r="6" class="fill" opacity="0.85"/>
+</svg>
