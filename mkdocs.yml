@@ -5,12 +5,11 @@ nav:
   - Home: index.md
   - About: about.md
   - Tags: tags.md
+  - Biology: biology.md
   - Hands-On ML:
       - Overview: homl/overview.md
       - Chapter 1: homl/chapter1.md
       - Chapter 2: homl/chapter2.md
-  - Uni Notes:
-      - Biology Test Summary: Uni-Notes/biology-test-intuitive.md
   - Platform IO:
       - Overview: platformio/index.md
       - Setup Guide: platformio/setup.md
