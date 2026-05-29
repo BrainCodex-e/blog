@@ -7,239 +7,29 @@
   <link rel="icon" href="../assets/favicon.png">
   <title>Biology - erez site</title>
   <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
   <style>
-    :root { --md-text-font: "Roboto"; --md-code-font: "Roboto Mono"; }
-    body { direction: ltr; }
-    .bio-shell { direction: rtl; text-align: right; }
-    .bio-shell h1, .bio-shell h2, .bio-shell h3 { letter-spacing: 0; }
-    .bio-hero {
-      border: 1px solid var(--md-default-fg-color--lightest);
-      border-radius: .55rem;
-      padding: 1.25rem;
-      background: linear-gradient(135deg, rgba(63,81,181,.10), rgba(0,150,136,.08));
-      margin-bottom: 1rem;
-    }
-    .bio-hero h1 { margin: 0 0 .35rem; }
-    .bio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: .75rem;
-      margin: 1rem 0 1.2rem;
-    }
-    .bio-card {
-      border: 1px solid var(--md-default-fg-color--lightest);
-      border-radius: .45rem;
-      padding: .85rem;
-      background: var(--md-default-bg-color);
-    }
-    .bio-card strong { color: var(--md-primary-fg-color); display: block; margin-bottom: .25rem; }
-    .flow {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: .42rem;
-      margin: .8rem 0;
-    }
-    .flow span {
-      display: inline-block;
-      padding: .35rem .55rem;
-      border: 1px solid var(--md-default-fg-color--lightest);
-      border-radius: .35rem;
-      background: var(--md-code-bg-color);
-      white-space: nowrap;
-    }
-    .flow b { color: var(--md-primary-fg-color); }
-    .ltr, .bio-shell code, .bio-shell pre, .seq {
-      direction: ltr;
-      text-align: left;
-      unicode-bidi: isolate;
-      font-family: var(--md-code-font);
-    }
-    .seq {
-      border-radius: .35rem;
-      padding: .65rem .75rem;
-      background: var(--md-code-bg-color);
-      overflow-x: auto;
-      margin: .65rem 0;
-    }
-    .bio-shell table { width: 100%; border-collapse: collapse; margin: .75rem 0; }
-    .bio-shell th, .bio-shell td { border: 1px solid var(--md-default-fg-color--lightest); padding: .55rem; vertical-align: top; }
-    .bio-shell th { background: var(--md-code-bg-color); }
-    details.bio-section {
-      border: 1px solid var(--md-default-fg-color--lightest);
-      border-radius: .5rem;
-      margin: .75rem 0;
-      background: var(--md-default-bg-color);
-    }
-    details.bio-section > summary {
-      cursor: pointer;
-      padding: .8rem 1rem;
-      font-weight: 700;
-      color: var(--md-primary-fg-color);
-    }
-    details.bio-section > div { padding: 0 1rem 1rem; }
-    .note {
-      border-inline-start: .25rem solid var(--md-primary-fg-color);
-      padding: .65rem .85rem;
-      background: rgba(63,81,181,.08);
-      border-radius: .35rem;
-      margin: .75rem 0;
-    }
-    .mini-nav a { margin-inline-end: .35rem; }
-    .md-sidebar .md-nav__link--active { color: var(--md-primary-fg-color); }
-    @media (max-width: 76.1875em) { .md-sidebar--primary { display: none; } }
+    :root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"} body{direction:ltr}.bio-shell{direction:rtl;text-align:right}.bio-shell h1,.bio-shell h2,.bio-shell h3{letter-spacing:0}.bio-hero{border:1px solid var(--md-default-fg-color--lightest);border-radius:.55rem;padding:1.1rem;background:linear-gradient(135deg,rgba(63,81,181,.11),rgba(0,150,136,.08));margin-bottom:1rem}.bio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:.75rem;margin:1rem 0}.bio-card{border:1px solid var(--md-default-fg-color--lightest);border-radius:.45rem;padding:.85rem;background:var(--md-default-bg-color)}.bio-card strong{color:var(--md-primary-fg-color);display:block;margin-bottom:.2rem}.flow{display:flex;flex-wrap:wrap;gap:.42rem;align-items:center;margin:.75rem 0}.flow span{display:inline-block;padding:.32rem .52rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:.35rem;background:var(--md-code-bg-color);white-space:nowrap}.flow b{color:var(--md-primary-fg-color)}.ltr,.bio-shell code,.bio-shell pre{direction:ltr;text-align:left;unicode-bidi:isolate;font-family:var(--md-code-font)}.seq{direction:ltr;text-align:left;unicode-bidi:isolate;border-radius:.35rem;padding:.65rem .75rem;background:var(--md-code-bg-color);overflow-x:auto;margin:.65rem 0}.bio-shell table{width:100%;border-collapse:collapse;margin:.7rem 0}.bio-shell th,.bio-shell td{border:1px solid var(--md-default-fg-color--lightest);padding:.5rem;vertical-align:top}.bio-shell th{background:var(--md-code-bg-color)}details.bio-section{border:1px solid var(--md-default-fg-color--lightest);border-radius:.5rem;margin:.72rem 0;background:var(--md-default-bg-color)}details.bio-section>summary{cursor:pointer;padding:.75rem 1rem;font-weight:700;color:var(--md-primary-fg-color)}details.bio-section>div{padding:0 1rem 1rem}.toc-mini a{display:inline-block;margin:.18rem .08rem;padding:.28rem .5rem;border-radius:999px;background:var(--md-code-bg-color);font-size:.82rem}.muted{color:var(--md-default-fg-color--light)}
   </style>
 </head>
 <body dir="ltr">
-<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-<label class="md-overlay" for="__drawer"></label>
-<header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="erez site" class="md-header__button md-logo" aria-label="erez site"><img src="../assets/favicon.png" alt="logo"></a>
-    <label class="md-header__button md-icon" for="__drawer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></label>
-    <div class="md-header__title"><div class="md-header__ellipsis"><div class="md-header__topic"><span class="md-ellipsis">erez site</span></div><div class="md-header__topic"><span class="md-ellipsis">Biology</span></div></div></div>
-  </nav>
-</header>
-<div class="md-container">
-<main class="md-main">
-<div class="md-main__inner md-grid">
-<aside class="md-sidebar md-sidebar--primary"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner">
-<nav class="md-nav md-nav--primary" aria-label="Navigation">
-<label class="md-nav__title"><a href=".." class="md-nav__button md-logo"><img src="../assets/favicon.png" alt="logo"></a> erez site</label>
-<ul class="md-nav__list">
-<li class="md-nav__item"><a href="../" class="md-nav__link">Home</a></li>
-<li class="md-nav__item"><a href="../about/" class="md-nav__link">About</a></li>
-<li class="md-nav__item"><a href="../tags/" class="md-nav__link">Tags</a></li>
-<li class="md-nav__item md-nav__item--active"><a href="./" class="md-nav__link md-nav__link--active">Biology</a></li>
-<li class="md-nav__item"><a href="../devops/" class="md-nav__link">DevOps</a></li>
-<li class="md-nav__item"><a href="../platformio/" class="md-nav__link">Platform IO</a></li>
-</ul>
-</nav>
-</div></div></aside>
-<div class="md-content"><article class="md-content__inner md-typeset bio-shell">
-<section class="bio-hero">
-  <h1>סיכום אינטואיטיבי למבחן בביולוגיה</h1>
-  <p>דף למידה מהיר, קריא, ומסודר לפי איך שכדאי לחשוב במבחן: מהכימיה הבסיסית ועד DNA, חלבונים, מוטציות, PCR ומעבר אותות.</p>
-  <div class="flow" dir="rtl">
-    <span>כימיה</span><b>←</b><span>מולקולות</span><b>←</b><span>תא</span><b>←</b><span>DNA</span><b>←</b><span>RNA</span><b>←</b><span>חלבון</span><b>←</b><span>תפקוד</span>
-  </div>
-  <p class="note"><strong>כיווניות:</strong> בעברית התהליך מוצג מימין לשמאל עם <code>←</code>. רצפים מדעיים נשארים משמאל לימין, למשל <span class="ltr">DNA → RNA → Protein</span> ו-<span class="ltr">5' → 3'</span>.</p>
-</section>
-
-<div class="bio-grid mini-nav">
-  <a class="bio-card" href="#chem"><strong>כימיה ו-pH</strong>קשרים, pKa, חומצות אמינו</a>
-  <a class="bio-card" href="#energy"><strong>אנרגיה</strong>אנזימים, גליקוליזה, קרבס, תסיסה</a>
-  <a class="bio-card" href="#genetics"><strong>גנטיקה</strong>מנדל, מיטוזה/מיוזה, מוטציות</a>
-  <a class="bio-card" href="#molecular"><strong>ביולוגיה מולקולרית</strong>DNA, RNA, תרגום, PCR, ריצוף</a>
-</div>
-
-<h2 id="chem">1. כימיה ו-pH</h2>
-<div class="bio-grid">
-  <div class="bio-card"><strong>חומצה</strong>מוסרת פרוטון <span class="ltr">H+</span>.</div>
-  <div class="bio-card"><strong>בסיס</strong>קולט פרוטון או משחרר <span class="ltr">OH-</span>.</div>
-  <div class="bio-card"><strong>pH נמוך</strong>הרבה <span class="ltr">H+</span>, מולקולות יותר מפרוטנות.</div>
-  <div class="bio-card"><strong>pH גבוה</strong>מעט <span class="ltr">H+</span>, מולקולות מאבדות פרוטונים.</div>
-</div>
-<table><thead><tr><th>קשר</th><th>מה לזכור</th><th>מופיע איפה?</th></tr></thead><tbody>
-<tr><td>קוולנטי</td><td>שיתוף אלקטרונים, חזק</td><td>בתוך מולקולות</td></tr>
-<tr><td>יוני</td><td>משיכה בין מטענים</td><td>קבוצות טעונות</td></tr>
-<tr><td>מימן</td><td><span class="ltr">H</span> שקשור ל-<span class="ltr">O/N/F</span></td><td>מים, DNA, חלבונים</td></tr>
-<tr><td>ואן דר ולס</td><td>חלש, רגעי, מצטבר</td><td>כמעט בכל אינטראקציה</td></tr>
-</tbody></table>
-<details class="bio-section" open><summary>כלל pKa</summary><div>
-<table><thead><tr><th>מצב</th><th>משמעות</th></tr></thead><tbody>
-<tr><td><span class="ltr">pH &lt; pKa</span></td><td>הקבוצה בעיקר עם פרוטון</td></tr>
-<tr><td><span class="ltr">pH &gt; pKa</span></td><td>הקבוצה בעיקר בלי פרוטון</td></tr>
-<tr><td><span class="ltr">pH = pKa</span></td><td>חצי עם פרוטון וחצי בלי</td></tr>
-</tbody></table>
-</div></details>
-
-<h2 id="proteins">2. חלבונים ואנזימים</h2>
-<div class="bio-grid">
-  <div class="bio-card"><strong>מבנה ראשוני</strong>רצף חומצות האמינו.</div>
-  <div class="bio-card"><strong>מבנה שניוני</strong>אלפא-הליקס / בטא-שיט.</div>
-  <div class="bio-card"><strong>מבנה שלישוני</strong>הקיפול התלת-ממדי של חלבון אחד.</div>
-  <div class="bio-card"><strong>מבנה רבעוני</strong>כמה תתי-יחידות יחד.</div>
-</div>
-<p>אנזים מוריד את אנרגיית השפעול ולכן מזרז תגובה. הוא לא משנה את שיווי המשקל ולא את <span class="ltr">ΔG</span>.</p>
-<div class="seq">E + S ⇌ ES ⇌ E + P</div>
-<table><thead><tr><th>אנזים כן עושה</th><th>אנזים לא עושה</th></tr></thead><tbody><tr><td>מייצב מצב מעבר, מקרב מולקולות, מסדר כיוון נכון</td><td>לא משנה שיווי משקל, לא נצרך בתגובה</td></tr></tbody></table>
-
-<h2 id="energy">3. הפקת אנרגיה</h2>
-<div class="flow" dir="rtl"><span>גלוקוז</span><b>←</b><span>גליקוליזה</span><b>←</b><span>פירובט</span><b>←</b><span>קרבס</span><b>←</b><span>זרחון חמצוני</span><b>←</b><span>ATP</span></div>
-<table><thead><tr><th>שלב</th><th>מיקום</th><th>תוצרים עיקריים</th></tr></thead><tbody>
-<tr><td>גליקוליזה</td><td>ציטופלזמה</td><td>2 פירובט, 2 ATP נטו, 2 NADH</td></tr>
-<tr><td>שלב מקדים לקרבס</td><td>מיטוכונדריה</td><td>2 Acetyl-CoA, 2 CO2, 2 NADH</td></tr>
-<tr><td>קרבס</td><td>מיטוכונדריה</td><td>6 NADH, 2 FADH2, 2 GTP, 4 CO2</td></tr>
-<tr><td>זרחון חמצוני</td><td>מיטוכונדריה</td><td>רוב ה-ATP, מים</td></tr>
-</tbody></table>
-<p class="note">בלי חמצן: הגליקוליזה יכולה להמשיך, אבל אין רווח גדול של ATP. לכן מתקבלת תסיסה ורק 2 ATP נטו.</p>
-
-<h2 id="genetics">4. גנטיקה ומוטציות</h2>
-<table><thead><tr><th>מושג</th><th>פירוש</th></tr></thead><tbody>
-<tr><td>גן</td><td>מקטע DNA עם מידע לתוצר תפקודי</td></tr>
-<tr><td>אלל</td><td>גרסה של גן</td></tr>
-<tr><td>גנוטיפ</td><td>הרכב האללים</td></tr>
-<tr><td>פנוטיפ</td><td>התכונה בפועל</td></tr>
-<tr><td>הומוזיגוט / הטרוזיגוט</td><td>שני אללים זהים / שני אללים שונים</td></tr>
-</tbody></table>
-<div class="seq">Aa × Aa → 1 AA : 2 Aa : 1 aa → פנוטיפ 3:1 בדומיננטיות מלאה</div>
-<details class="bio-section"><summary>מוטציות</summary><div>
-<table><thead><tr><th>סוג</th><th>השפעה אפשרית</th></tr></thead><tbody>
-<tr><td>Silent</td><td>אין שינוי בחומצה האמינית</td></tr>
-<tr><td>Missense</td><td>חומצה אמינית אחת משתנה</td></tr>
-<tr><td>Nonsense</td><td>קודון עצירה מוקדם, חלבון קצר</td></tr>
-<tr><td>Frameshift</td><td>הוספה/החסרה שאינה כפולה של 3, משנה את מסגרת הקריאה</td></tr>
-</tbody></table>
-</div></details>
-
-<h2 id="molecular">5. מ-DNA לחלבון</h2>
-<div class="seq">DNA → RNA → Protein</div>
-<p>כאן משתמשים בכיוון מדעי משמאל לימין, כי מדובר בסימון בינלאומי ולא במשפט עברי.</p>
-<table><thead><tr><th>מולקולה</th><th>מה לזכור</th></tr></thead><tbody>
-<tr><td>DNA</td><td>דו-גדילי, בסיסים A/T/G/C, יציב</td></tr>
-<tr><td>RNA</td><td>לרוב חד-גדילי, U במקום T, פחות יציב</td></tr>
-<tr><td>mRNA</td><td>נושא את הקוד לריבוזום</td></tr>
-<tr><td>tRNA</td><td>מביא חומצות אמינו לפי אנטיקודון</td></tr>
-</tbody></table>
-<div class="seq">Template DNA: 3' TAC GGA 5'<br>mRNA: 5' AUG CCU 3'</div>
-<p class="note">רצפי DNA/RNA כותבים תמיד כ-<span class="ltr">5' → 3'</span> כאשר לא נאמר אחרת.</p>
-
-<h2 id="pcr">6. PCR וריצוף</h2>
-<div class="flow" dir="rtl"><span>דנטורציה</span><b>←</b><span>איחוי פריימרים</span><b>←</b><span>הארכה</span><b>←</b><span>הכפלת DNA</span></div>
-<table><thead><tr><th>שלב</th><th>טמפרטורה</th><th>מה קורה?</th></tr></thead><tbody>
-<tr><td>דנטורציה</td><td><span class="ltr">95°C</span></td><td>שני הגדילים נפרדים</td></tr>
-<tr><td>איחוי</td><td><span class="ltr">~68°C</span></td><td>פריימרים נקשרים</td></tr>
-<tr><td>הארכה</td><td><span class="ltr">72°C</span></td><td>Taq polymerase מאריך</td></tr>
-</tbody></table>
-<div class="seq">copies after n cycles ≈ 2^n</div>
-<p>בסנגר משתמשים ב-ddNTP שמפסיקים הארכה. בשיטה מודרנית כל בסיס מסומן בצבע פלואורסצנטי אחר.</p>
-
-<h2 id="signals">7. מעבר אותות</h2>
-<div class="flow" dir="rtl"><span>אות חוץ-תאי</span><b>←</b><span>קולטן</span><b>←</b><span>קינאזות</span><b>←</b><span>פקטורי שעתוק</span><b>←</b><span>שינוי ביטוי גנים</span></div>
-<table><thead><tr><th>RAS</th><th>מצב</th></tr></thead><tbody>
-<tr><td><span class="ltr">RAS-GDP</span></td><td>לא פעיל</td></tr>
-<tr><td><span class="ltr">RAS-GTP</span></td><td>פעיל</td></tr>
-</tbody></table>
-<p class="note">מוטציה שמשאירה את RAS פעיל זמן רב מדי עלולה לגרום לחלוקה בלתי מבוקרת ולסרטן.</p>
-
-<h2 id="exam">8. איך לגשת לשאלות</h2>
-<div class="bio-grid">
-  <div class="bio-card"><strong>רצפים</strong>כיוון → השלמה → mRNA → קודונים.</div>
-  <div class="bio-card"><strong>מוטציות</strong>החלפה/הוספה/החסרה → כפולה של 3? → השפעה.</div>
-  <div class="bio-card"><strong>ג'ל</strong>מקטעים קטנים רצים רחוק יותר; כל אלל בילד מגיע מהורה.</div>
-  <div class="bio-card"><strong>נשימה</strong>יש גלוקוז? יש גליקוליזה? יש חמצן?</div>
-</div>
-
-<p><a href="../tags/">חזרה לתגיות</a> · <a href="../">חזרה לבית</a></p>
-</article></div>
-</div>
-</main>
-<footer class="md-footer"><div class="md-footer-meta md-typeset"><div class="md-footer-meta__inner md-grid"><div class="md-copyright">Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">Material for MkDocs</a></div></div></div></footer>
-</div>
-<script id="__config" type="application/json">{"base":"..","features":["content.code.copy"],"search":"../assets/javascripts/workers/search.2c215733.min.js","translations":{"clipboard.copy":"Copy to clipboard","clipboard.copied":"Copied to clipboard"}}</script>
-<script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
-</body>
-</html>
+<header class="md-header" data-md-component="header"><nav class="md-header__inner md-grid"><a href=".." title="erez site" class="md-header__button md-logo"><img src="../assets/favicon.png" alt="logo"></a><label class="md-header__button md-icon" for="__drawer"></label><div class="md-header__title"><div class="md-header__ellipsis"><div class="md-header__topic"><span class="md-ellipsis">Biology</span></div></div></div></nav></header>
+<div class="md-container"><main class="md-main"><div class="md-main__inner md-grid"><div class="md-sidebar md-sidebar--primary"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--primary"><label class="md-nav__title">erez site</label><ul class="md-nav__list"><li class="md-nav__item"><a href=".." class="md-nav__link">Home</a></li><li class="md-nav__item"><a href="../about/" class="md-nav__link">About</a></li><li class="md-nav__item"><a href="../tags/" class="md-nav__link">Tags</a></li><li class="md-nav__item"><a href="./" class="md-nav__link md-nav__link--active">Biology</a></li></ul></nav></div></div></div><div class="md-content"><article class="md-content__inner md-typeset bio-shell">
+<nav class="md-tags"><a href="../tags/#tag:biology" class="md-tag">Biology</a></nav>
+<section class="bio-hero"><h1>סיכום אינטואיטיבי למבחן בביולוגיה</h1><p>הדף הזה הורחב לפי המצגות והתרגולים: לא רק מושגים, אלא גם ניסויים, תמונות, ג'לים, גרפים ושאלות מעבדה.</p><div class="flow"><span>כימיה</span><b>←</b><span>חלבונים</span><b>←</b><span>אנזימים</span><b>←</b><span>אנרגיה</span><b>←</b><span>DNA</span><b>←</b><span>גנטיקה</span><b>←</b><span>הנדסה וריצוף</span><b>←</b><span>אותות</span></div><p class="muted">עברית ותהליכים לימודיים נקראים מימין לשמאל עם <code>←</code>. רצפים מדעיים נשארים LTR, למשל <code>DNA → RNA → Protein</code> ו-<code>5' → 3'</code>.</p></section>
+<div class="toc-mini"><a href="#chem">כימיה</a><a href="#proteins">חלבונים</a><a href="#enzymes">אנזימים</a><a href="#energy">אנרגיה</a><a href="#genetics">גנטיקה</a><a href="#molecular">ביולוגיה מולקולרית</a><a href="#experiments">ניסויים</a><a href="#gene-control">בקרה</a><a href="#engineering">הנדסה</a><a href="#pictures">קריאת תמונות</a></div>
+<details id="chem" class="bio-section" open><summary>כימיה, תמיסות, pH ובופרים</summary><div><p>תא בנוי ממולקולות, מולקולות מאטומים, והתכונות נקבעות לפי אלקטרונים, קשרים, מטענים ופולריות.</p><table><tr><th>נושא</th><th>מה צריך לזכור</th></tr><tr><td>אטום</td><td>פרוטונים קובעים יסוד; אלקטרונים קובעים תגובתיות; איזוטופים שונים במספר נייטרונים.</td></tr><tr><td>קשרים</td><td>קוולנטי חזק בתוך מולקולה; יוני בין מטענים; קשר מימן עם H הקשור ל-O/N/F; ואן דר ולס חלש אך מצטבר.</td></tr><tr><td>אלקטרושליליות</td><td>הפרש גדול יוצר קוטביות; מולקולות פולריות אוהבות מים.</td></tr><tr><td>הידרופובי/הידרופילי</td><td>הידרופובי נדחה ממים, הידרופילי יוצר אינטראקציות עם מים.</td></tr><tr><td>מולריות</td><td><code>1 mol = 6.022 × 10^23</code>, ו-<code>M = mol/liter</code>.</td></tr></table><p>חומצה מוסרת <code>H+</code>, בסיס קולט פרוטון או משחרר <code>OH-</code>. ב-pH נמוך יש הרבה <code>H+</code>; ב-pH גבוה יש מעט <code>H+</code>.</p><div class="seq">pH = pKa + log([A-]/[HA])
+pH &lt; pKa → protonated
+pH &gt; pKa → deprotonated</div><p>בופר הוא זוג חומצה חלשה ובסיס מצומד שמתנגדים לשינוי pH. זה חשוב בגוף כי pH הדם סביב 7.4, ושינוי קטן יכול לשבש חלבונים ואנזימים. בטיטרציה מחפשים את נקודת השקילות ואת אזור הבופר.</p></div></details>
+<details id="proteins" class="bio-section" open><summary>חומצות אמינו, חלבונים, ממברנות ושומנים</summary><div><p>חלבון הוא שרשרת חומצות אמינו שמתקפלת. המבנה הוא התפקוד.</p><table><tr><th>רמת מבנה</th><th>פירוש</th></tr><tr><td>ראשוני</td><td>רצף חומצות אמינו, מ-N-terminus ל-C-terminus.</td></tr><tr><td>שניוני</td><td>α-helix ו-β-sheet, בעיקר קשרי מימן בשלד.</td></tr><tr><td>שלישוני</td><td>קיפול תלת-ממדי של חלבון אחד.</td></tr><tr><td>רבעוני</td><td>כמה תתי יחידות, למשל המוגלובין.</td></tr></table><p>קבוצת R קובעת אם חומצה אמינית הידרופובית, הידרופילית, חיובית, שלילית או מיוחדת. מוטציה באתר פעיל, באתר קישור, או באזור שמייצב קיפול בדרך כלל משמעותית יותר ממוטציה באזור לא קריטי.</p><table><tr><th>שומנים וממברנה</th><th>מה לזכור</th></tr><tr><td>טריגליצריד</td><td>גליצרול + 3 חומצות שומן, מאגר אנרגיה.</td></tr><tr><td>פוספוליפיד</td><td>ראש הידרופילי וזנבות הידרופוביים, בונה ממברנה.</td></tr><tr><td>רווי</td><td>אין קשר כפול, ישר יותר ונארז בצפיפות.</td></tr><tr><td>לא רווי</td><td>יש קשר כפול, יוצר כיפוף ומעלה נוזליות.</td></tr><tr><td>הובלה</td><td>דיפוזיה פשוטה עם מפל; דיפוזיה מזורזת עם חלבון; הובלה פעילה נגד מפל ודורשת אנרגיה.</td></tr></table></div></details>
+<details id="enzymes" class="bio-section" open><summary>אנזימים, אנרגיית שפעול וקינטיקה</summary><div><p>אנזים מוריד אנרגיית שפעול ולכן מזרז תגובה. הוא לא משנה את <code>ΔG</code>, לא משנה את שיווי המשקל, ולא נצרך בתגובה.</p><div class="seq">E + S ⇌ ES ⇌ E + P
+ΔG = ΔG° + RT ln([products]/[reactants])</div><table><tr><th>מושג</th><th>פירוש</th></tr><tr><td><code>Vmax</code></td><td>מהירות מקסימלית כשהאנזים רווי.</td></tr><tr><td><code>Km</code></td><td>ריכוז סובסטרט שבו <code>V0 = 1/2 Vmax</code>.</td></tr><tr><td><code>Km</code> נמוך</td><td>אנזים עובד טוב גם בריכוז סובסטרט נמוך.</td></tr><tr><td>עיכוב תחרותי</td><td><code>Km</code> עולה, <code>Vmax</code> כמעט לא משתנה.</td></tr><tr><td>עיכוב לא תחרותי</td><td><code>Vmax</code> יורד.</td></tr><tr><td>אלוסטריה</td><td>קישור באתר אחר משנה מבנה ופעילות.</td></tr></table><p>דוגמת TIM מהמצגות: שינוי קטן כמו Glu→Asp או פגיעה בלולאה באתר הפעיל יכול להוריד מהירות פי מאות או אלפים, כי האתר הפעיל צריך גאומטריה מדויקת.</p></div></details>
+<details id="energy" class="bio-section" open><summary>מסלולים ביוכימיים, ATP ונשימה תאית</summary><div><p>מסלול ביוכימי הוא שרשרת תגובות, וכל תוצר הופך לסובסטרט של השלב הבא. תגובה לא מועדפת יכולה להתקדם אם מצמידים אותה לתגובה מועדפת כמו פירוק ATP.</p><table><tr><th>שלב</th><th>מיקום</th><th>תוצרים</th></tr><tr><td>גליקוליזה</td><td>ציטופלזמה</td><td>2 פירובט, 2 ATP נטו, 2 NADH.</td></tr><tr><td>פירובט → Acetyl-CoA</td><td>מיטוכונדריה</td><td>CO2 ו-NADH.</td></tr><tr><td>קרבס</td><td>מיטוכונדריה</td><td>NADH, FADH2, GTP, CO2.</td></tr><tr><td>זרחון חמצוני</td><td>מיטוכונדריה</td><td>רוב ה-ATP; חמצן הוא מקבל האלקטרונים הסופי.</td></tr><tr><td>תסיסה</td><td>בלי חמצן</td><td>רק 2 ATP מגליקוליזה; פירובט הופך ללקטט או אתנול ו-CO2.</td></tr></table><p>מגלוקוז אחד בנוכחות חמצן מקבלים בערך <code>30-32 ATP</code>. חומצות שומן עוברות β-oxidation והופכות ל-Acetyl-CoA, ולכן הן מקור אנרגיה עשיר.</p></div></details>
+<details id="genetics" class="bio-section" open><summary>גנטיקה, מיוזה, אילנות יוחסין ורקומבינציה</summary><div><p>גן הוא מקטע DNA עם מידע לתוצר; אלל הוא גרסה של גן; גנוטיפ הוא הרכב אללים; פנוטיפ הוא הביטוי הנראה או הנמדד.</p><table><tr><th>כלי</th><th>איך משתמשים בו</th></tr><tr><td>ריבוע פנט</td><td>כותבים גמטות של כל הורה ומחשבים יחס גנוטיפי ופנוטיפי.</td></tr><tr><td>מבחן הכלאה</td><td>דומיננטי לא ידוע × רצסיבי. אם יש צאצאים רצסיביים, הדומיננטי היה הטרוזיגוט.</td></tr><tr><td>הסתברות</td><td>אירועים בלתי תלויים מכפילים; או/אפשרויות חלופיות מחברים.</td></tr><tr><td>אילן יוחסין</td><td>רצסיבי יכול לדלג דורות; דומיננטי נוטה להופיע בכל דור; X-linked נפוץ בזכרים.</td></tr></table><table><tr><th>תהליך</th><th>תוצאה</th></tr><tr><td>מיטוזה</td><td>2 תאי בת זהים ודיפלואידיים.</td></tr><tr><td>מיוזה</td><td>4 תאי מין שונים והפלואידיים.</td></tr><tr><td>רקומבינציה</td><td>החלפת מקטעים בין כרומוזומים הומולוגיים.</td></tr><tr><td>תאחיזה</td><td>גנים קרובים על אותו כרומוזום נוטים לעבור יחד.</td></tr></table><div class="seq">1% recombination = 1 map unit = 1 cM</div><p>שונות גנטית נוצרת ממיוזה, crossing over, הפריה אקראית ומוטציות.</p></div></details>
+<details id="molecular" class="bio-section" open><summary>DNA, RNA, שכפול, שעתוק, תרגום ומוטציות</summary><div><p>הדוגמה המרכזית:</p><div class="seq">DNA → RNA → Protein</div><table><tr><th>נושא</th><th>נקודות חובה</th></tr><tr><td>DNA</td><td>A-T, C-G; בין C-G שלושה קשרי מימן ולכן GC יציב יותר.</td></tr><tr><td>RNA</td><td>U במקום T, סוכר ריבוז, לרוב חד-גדילי.</td></tr><tr><td>שעתוק</td><td>RNA polymerase יוצר RNA משלים לגדיל התבנית; RNA נבנה <code>5' → 3'</code>.</td></tr><tr><td>עיבוד באאוקריוטים</td><td><code>5' cap</code>, זנב <code>poly-A</code>, שחבור אינטרונים וחיבור אקסונים.</td></tr><tr><td>תרגום</td><td>ריבוזום קורא קודונים; <code>AUG</code> התחלה; <code>UAA/UAG/UGA</code> עצירה.</td></tr><tr><td>מסגרת קריאה</td><td>מתחילים מ-AUG ומחלקים לשלשות; שינוי בסיס אחד יכול לשנות את כל ההמשך אם יש frameshift.</td></tr></table><p>שכפול DNA הוא שמרני למחצה. DNA polymerase חייב פריימר ובונה רק <code>5' → 3'</code>. leading strand נבנה ברצף; lagging strand נבנה במקטעי Okazaki. Helicase פותח, primase שם פריימר, polymerase מאריך, RNase מסיר פריימרים, ligase מחבר, topoisomerase משחרר מתח.</p><table><tr><th>מוטציה</th><th>השפעה</th></tr><tr><td>Silent</td><td>אותה חומצה אמינית.</td></tr><tr><td>Missense conservative</td><td>חומצה אמינית דומה; לעיתים השפעה קטנה.</td></tr><tr><td>Missense non-conservative</td><td>חומצה אמינית שונה בתכונות; יכול לשנות חלבון.</td></tr><tr><td>Nonsense</td><td>קודון עצירה מוקדם.</td></tr><tr><td>Insertion/deletion לא כפולה של 3</td><td>frameshift, לרוב חמור.</td></tr><tr><td>מוטציה בפרומוטר/שחבור/poly-A</td><td>יכולה לפגוע בביטוי גם בלי לשנות את רצף החלבון.</td></tr></table></div></details>
+<details id="experiments" class="bio-section" open><summary>ניסויים היסטוריים שצריך לדעת להסביר</summary><div><table><tr><th>ניסוי</th><th>מה עשו</th><th>מסקנה</th></tr><tr><td>Griffith</td><td>S מומתים בחום + R חיים הפכו ל-S חיים.</td><td>יש עקרון טרנספורמציה שעובר בין תאים.</td></tr><tr><td>Avery-MacLeod-McCarty</td><td>פירקו חלבון/RNA/DNA ובדקו מתי טרנספורמציה נעלמת.</td><td>כאשר DNA פורק נעלמה הטרנספורמציה, לכן DNA הוא החומר התורשתי.</td></tr><tr><td>Hershey-Chase</td><td>סימנו DNA ב-<code>P32</code> וחלבון ב-<code>S35</code> בפאג'ים.</td><td>DNA נכנס לחיידק; חלבון נשאר בחוץ.</td></tr><tr><td>Chargaff</td><td>מדד אחוזי בסיסים.</td><td><code>%A=%T</code>, <code>%C=%G</code>.</td></tr><tr><td>Photo 51</td><td>דיפרקציית X-ray של DNA.</td><td>תמכה במודל הסליל הכפול.</td></tr><tr><td>Meselson-Stahl</td><td>העברת חיידקים מ-<code>N15</code> ל-<code>N14</code>.</td><td>שכפול DNA שמרני למחצה.</td></tr><tr><td>שמרים וסוכר</td><td>בודקים CO2/תסיסה בתנאים שונים.</td><td>בלי חמצן שמרים עושים תסיסה ומפיקים מעט ATP.</td></tr></table></div></details>
+<details id="gene-control" class="bio-section" open><summary>בקרה על ביטוי גנים, lac operon ומעבר אותות</summary><div><p>כל התאים בגוף מכילים כמעט אותו DNA, אבל מבטאים גנים שונים. בקרה יכולה להיות ברמת כרומוזום, שעתוק, שחבור, יציבות mRNA, תרגום ועיבוד חלבון.</p><h3>lac operon</h3><p>E. coli מייצר β-galactosidase ו-permease רק כשיש לקטוז ואין גלוקוז.</p><table><tr><th>מצב</th><th>תוצאה</th></tr><tr><td>אין לקטוז</td><td>רפרסור קשור לאופרטור, אין שעתוק.</td></tr><tr><td>יש לקטוז ויש גלוקוז</td><td>רפרסור משתחרר אבל CAP לא פעיל, ביטוי נמוך.</td></tr><tr><td>יש לקטוז ואין גלוקוז</td><td>רפרסור משוחרר ו-CAP/cAMP פעיל, ביטוי גבוה.</td></tr></table><p>mRNA מופיע לפני חלבון ונעלם מהר יותר; חלבון יכול להישאר גם אחרי שהשעתוק ירד.</p><h3>MAP kinase ו-RAS</h3><div class="flow"><span>Growth factor</span><b>←</b><span>RTK dimerization</span><b>←</b><span>SOS/GEF</span><b>←</b><span>RAS-GTP</span><b>←</b><span>RAF/MEK/ERK</span><b>←</b><span>שינוי ביטוי גנים</span></div><p>RAS-GDP לא פעיל; RAS-GTP פעיל. GEF מחליף GDP ב-GTP; GAP מעודד פירוק GTP ל-GDP. מוטציות שמחזיקות RAS או רצפטור פעילים מדי עלולות לגרום לסרטן.</p><p>בשאלות K1/K2: חלבון פעיל תמיד יכול לעקוף רק חסימה שנמצאת לפניו, לא חסימה שנמצאת אחריו.</p></div></details>
+<details id="engineering" class="bio-section" open><summary>הנדסה גנטית, ג'לים, ריצוף, PCR, ChIP-seq ו-CRISPR</summary><div><table><tr><th>כלי</th><th>מה חייבים לדעת</th></tr><tr><td>פלסמיד</td><td>DNA מעגלי; צריך origin, סמן ברירה, אתר חיתוך, ולעיתים פרומוטר/reporter.</td></tr><tr><td>אנזימי רסטריקציה</td><td>חותכים רצפים ספציפיים; שני אנזימים יכולים לתת הכנסת כיוון נכונה ולהקטין וקטור ריק.</td></tr><tr><td>ליגאז</td><td>מחבר קצוות DNA בקשר קוולנטי.</td></tr><tr><td>cDNA</td><td>נוצר מ-mRNA; שימושי לביטוי גן אאוקריוטי בחיידקים כי אין אינטרונים.</td></tr><tr><td>ג'ל</td><td>DNA שלילי ורץ לפלוס; קטן רץ רחוק יותר; פס עבה = יותר DNA.</td></tr><tr><td>PCR</td><td>דנטורציה 95°C, איחוי פריימרים ~68°C, הארכה 72°C; אחרי n מחזורים בערך <code>2^n</code>.</td></tr><tr><td>סנגר</td><td>ddNTP חסר 3'OH עוצר הארכה; בג'ל קוראים מלמטה למעלה.</td></tr><tr><td>ChIP-seq</td><td>קיבוע חלבון-DNA ← שבירה ← נוגדן ← ניקוי DNA ← ספרייה ← ריצוף ← peaks.</td></tr><tr><td>Knock-out</td><td>הרס גן, loss of function.</td></tr><tr><td>Knock-in</td><td>הכנסת/תיקון רצף, gain/change of function.</td></tr><tr><td>Cre-LoxP</td><td>conditional knock-out ברקמה או בזמן מסוים.</td></tr><tr><td>CRISPR-Cas9</td><td>guide RNA מכוון את Cas9; תיקון לא מדויק יוצר knock-out, תיקון עם תבנית מאפשר knock-in.</td></tr></table><p>ספרייה גנומית כוללת גם אינטרונים ואזורי בקרה. ספריית cDNA כוללת רק גנים שהתבטאו בתא ובזמן הדגימה.</p></div></details>
+<details id="pictures" class="bio-section" open><summary>איך לקרוא תמונות, גרפים ושאלות ניסוי</summary><div><table><tr><th>תמונה/שאלה</th><th>איך לפתור</th></tr><tr><td>מבנה כימי</td><td>כל פינה היא C, משלימים H עד 4 קשרים, מחפשים O/N/F ומטענים כדי לזהות קשרי מימן/יוני/פולריות.</td></tr><tr><td>גרף pH/בופר</td><td>באזור שבו pH משתנה לאט יש בופר; ב-<code>pH=pKa</code> יש חצי HA וחצי A-.</td></tr><tr><td>גרף אנזים</td><td>בודקים רוויה, <code>Vmax</code>, <code>Km</code>, ומה השתנה עם מעכב.</td></tr><tr><td>ג'ל רסטריקציה</td><td>מחברים גדלי פסים; חיתוך אחד במקטע לינארי נותן שני פסים; פלסמיד מעגלי יכול לתת דפוסים שונים.</td></tr><tr><td>סנגר</td><td>קוראים פס תחתון ראשון, ואז עולים; שומרים על כיוון <code>5' → 3'</code> של הגדיל החדש.</td></tr><tr><td>אילן יוחסין</td><td>בודקים דילוג דורות, מין החולים, והאם אב מעביר לבן.</td></tr><tr><td>מסלול אותות</td><td>מסמנים upstream/downstream; מוטציה פעילה תמיד downstream תיתן תגובה גם אם upstream חסום.</td></tr><tr><td>בקרה גנטית</td><td>mRNA מוקדם וקצר חיים; חלבון מאוחר ויציב יותר.</td></tr></table><p><strong>תבנית ניסוי:</strong> מה השאלה, מה שינו, מה מדדו, מה הביקורת, ואיזו תוצאה מחזקת או מפריכה את ההשערה.</p></div></details>
+<section class="bio-hero"><h2>בדיקת כיסוי מהירה</h2><p>הדף מכסה את המצגות והתרגולים: כימיה, pH, בופרים, חלבונים, אנזימים, קינטיקה, אנרגיה, שומנים, גנטיקה, מיוזה/מיטוזה/רקומבינציה, DNA/RNA, שכפול, שעתוק, תרגום, מוטציות, בקרה, lac operon, מעבר אותות, הנדסה גנטית, ג'לים, PCR, סנגר, ChIP-seq, knock-in/out, CRISPR, וניסויי תמונה/מעבדה.</p></section>
+</article></div></div></main></div>
+</body></html>
