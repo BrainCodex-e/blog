@@ -76,8 +76,14 @@ sudo chmod 666 /dev/ttyACM0
 2. Select **"New Project"**
 3. Configure your project:
    - **Name**: Your project name
-   - **Board**: Select your board (e.g., "Arduino Uno", "ESP32 Dev Module")
-   - **Framework**: Arduino
+- **Board**: Select your board (e.g., "Arduino Uno", "ESP32 Dev Module")
+   
+   💡 *Tip: To see all available boards, run:*
+   ```bash
+    ~/.platformio/penv/bin/platformio device list  
+     ```
+     this will give you an idea whic board you should use
+   
 4. Click **Finish**
 
 ## Step 4: Verify Serial Connection

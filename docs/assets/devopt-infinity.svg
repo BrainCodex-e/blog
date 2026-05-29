@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="DevOpt infinity loop">
+  <title>DevOpt</title>
+  <style>
+    /* Use MkDocs Material theme primitives; no hard-coded hex colors */
+    .segA { stroke: var(--md-primary-fg-color); }
+    .segB { stroke: var(--md-accent-fg-color); }
+    .segC { stroke: var(--md-default-fg-color); opacity: .9; }
+    .label { fill: var(--md-default-fg-color); font: 700 64px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .stage { fill: var(--md-default-fg-color); opacity: .85; font: 600 22px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; letter-spacing: .04em; }
+  </style>
+
+  <!-- Background is transparent; intended to sit on the page background -->
+
+  <!-- Two thick loop strokes (split into segments so we can color them) -->
+  <!-- Left loop (DEV side) -->
+  <path class="segA" d="M150 210c0-70 60-125 135-125 60 0 110 34 145 95 35-61 85-95 145-95 75 0 135 55 135 125s-60 125-135 125c-60 0-110-34-145-95-35 61-85 95-145 95-75 0-135-55-135-125z"
+        fill="none" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Overlay segments to mimic multi-stage coloring like the reference (same path, different dash offsets) -->
+  <path class="segB" d="M150 210c0-70 60-125 135-125 60 0 110 34 145 95 35-61 85-95 145-95 75 0 135 55 135 125s-60 125-135 125c-60 0-110-34-145-95-35 61-85 95-145 95-75 0-135-55-135-125z"
+        fill="none" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="260 1400" stroke-dashoffset="-80"/>
+
+  <path class="segC" d="M150 210c0-70 60-125 135-125 60 0 110 34 145 95 35-61 85-95 145-95 75 0 135 55 135 125s-60 125-135 125c-60 0-110-34-145-95-35 61-85 95-145 95-75 0-135-55-135-125z"
+        fill="none" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"
+        stroke-dasharray="220 1400" stroke-dashoffset="-520"/>
+
+  <!-- Inner dark loop plate -->
+  <path d="M270 210c0-34 30-62 67-62 28 0 52 15 67 43 15-28 39-43 67-43 37 0 67 28 67 62s-30 62-67 62c-28 0-52-15-67-43-15 28-39 43-67 43-37 0-67-28-67-62z"
+        fill="rgba(0,0,0,0.10)"/>
+
+  <!-- Labels -->
+  <text x="305" y="230" class="label">Dev</text>
+  <text x="520" y="230" class="label">Ops</text>
+
+  <!-- Stage labels (roughly matching the reference layout) -->
+  <text x="85"  y="95"  class="stage">CODE</text>
+  <text x="255" y="70"  class="stage">PLAN</text>
+  <text x="335" y="330" class="stage">BUILD</text>
+  <text x="410" y="355" class="stage">TEST</text>
+
+  <text x="600" y="70"  class="stage">RELEASE</text>
+  <text x="765" y="95"  class="stage">DEPLOY</text>
+  <text x="585" y="355" class="stage">MONITOR</text>
+  <text x="750" y="330" class="stage">OPERATE</text>
+</svg>

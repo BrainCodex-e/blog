@@ -5,10 +5,12 @@ nav:
   - Home: index.md
   - About: about.md
   - Tags: tags.md
-  - Hands-On ML:
-      - Overview: homl/overview.md
-      - Chapter 1: homl/chapter1.md
-      - Chapter 2: homl/chapter2.md
+  - Biology: biology.md
+  - DevOps:
+      - Overview: devops/index.md
+      - Docker: devops/docker.md
+      - Python venv: devops/venv.md
+ 
   - Platform IO:
       - Overview: platformio/index.md
       - Setup Guide: platformio/setup.md
@@ -43,7 +45,9 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed
   - pymdownx.details
-  - pymdownx.emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tasklist
   - pymdownx.keys
   - pymdownx.mark
@@ -54,7 +58,8 @@ markdown_extensions:
   - md_in_html
   - pymdownx.arithmatex
 
-# Optional: Add mermaid2 plugin if you want advanced features
-# plugins:
-#   - search
-#   - mermaid2
+# Plugins
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md

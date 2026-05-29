@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Python venv widget">
+  <title>Python venv</title>
+  <style>
+    .stroke { stroke: var(--md-default-fg-color); }
+    .fill { fill: var(--md-default-fg-color); }
+    .bg { fill: var(--md-default-bg-color); }
+  </style>
+
+  <rect x="12" y="12" width="232" height="232" rx="28" class="bg" opacity="0.9"/>
+  <rect x="12" y="12" width="232" height="232" rx="28" fill="none" class="stroke" opacity="0.18" stroke-width="6"/>
+
+  <!-- two linked shapes to suggest "env" without using official python logo -->
+  <g fill="none" class="stroke" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M86 96c0-18 14-32 32-32h22c18 0 32 14 32 32v18c0 18-14 32-32 32h-22c-18 0-32-14-32-32V96z" opacity="0.9"/>
+    <path d="M84 160c0-18 14-32 32-32h22c18 0 32 14 32 32v18c0 18-14 32-32 32h-22c-18 0-32-14-32-32v-18z" opacity="0.7"/>
+
+    <!-- chain link -->
+    <path d="M104 128h48" opacity="0.6"/>
+
+    <!-- prompt chevron -->
+    <path d="M58 92l-18 18 18 18" opacity="0.45"/>
+    <path d="M44 128h30" opacity="0.45"/>
+  </g>
+
+  <circle cx="118" cy="86" r="5" class="fill" opacity="0.9"/>
+  <circle cx="138" cy="170" r="5" class="fill" opacity="0.9"/>
+</svg>
