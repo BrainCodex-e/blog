@@ -2,6 +2,6 @@
 
 ## Biology
 
-- [Biology Test Summary](Uni-Notes/biology-test-intuitive.md)
+- [Biology Test Summary](biology.md)
 
 <!-- material/tags -->
